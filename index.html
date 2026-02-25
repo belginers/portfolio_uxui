@@ -1,33 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Belgin Ersezer | UX/UI Designer</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <h1>Belgin Ersezer</h1>
+  <!-- HEADER -->
+  <header class="navbar">
+    <div class="logo">Belgin</div>
     <nav>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#tools">Tools</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
     </nav>
+    <a href="#contact" class="btn-outline">Contact Me</a>
   </header>
 
-  <main>
-    <section id="hero">
-      <h2>Hello, I’m Belgin 👋</h2>
-      <p>UX/UI Designer passionate about crafting intuitive and meaningful experiences.</p>
-      <button>View My Portfolio</button>
-    </section>
-  </main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>I’m <span>Belgin Ersezer</span><br>Junior UX UI Designer<br>Based in Belgium</h1>
+      <div class="hero-buttons">
+        <a href="#services" class="btn">View My Portfolio</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="image_pp-removebg-preview.png" alt="Belgin Illustration">
+    </div>
+  </section>
 
-  <footer>
-    <p>© 2025 Belgin Ersezer. All rights reserved.</p>
+  <div class="skills-banner">
+    <ul class="skills-track">
+      <li>Website Design</li>
+      <li>App Design</li>
+      <li>Landing Page</li>
+      <li>Mobile Prototype</li>
+    </ul>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <h2><span>Services</span> I Provide</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>UX Research</h3>
+        <p>Conducting interviews, usability tests, and user flows to understand and improve user experience.</p>
+      </div>
+      <div class="service-card">
+        <h3>UI Design</h3>
+        <p>Creating modern and accessible interfaces focused on clarity and visual harmony.</p>
+      </div>
+      <div class="service-card">
+        <h3>Prototyping</h3>
+        <p>Building interactive prototypes to validate designs and ensure fluid user interactions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="about-image">
+      <img src="image_about-removebg-preview (1).png" alt="Belgin pointing illustration">
+    </div>
+    <div class="about-text">
+      <h2>Who is Belgin Ersezer?</h2>
+      <p>
+        I’m a Junior UX/UI Designer based in Belgium, passionate about creating intuitive and meaningful digital
+        experiences.
+        During my internship at BubbleTech (February–May 2025), I designed user-centered web and mobile interfaces,
+        created wireframes and interactive prototypes in Figma, and collaborated closely with developers.
+        <br><br>
+        I’m currently looking for a UX/UI internship where I can contribute to real projects and continue growing in
+        product and interface design.
+      </p>
+      <a href="CV_Belgin_Ersezer (2).pdf" class="btn">Download CV</a>
+    </div>
+  </section>
+
+  <section id="tools" class="tools">
+    <h2>The <span>Tools</span> Behind My Work</h2>
+
+    <div class="tools-grid">
+      <!-- Figma -->
+      <div class="tool">
+        <div class="tool-card">
+          <div class="logo-wrap">
+            <img src="figma-original.svg" alt="Figma">
+          </div>
+          <div class="pct">80%</div>
+        </div>
+        <div class="tool-name">Figma</div>
+      </div>
+
+      <!-- Illustrator -->
+      <div class="tool">
+        <div class="tool-card">
+          <div class="logo-wrap">
+            <img src="illustrator-original.svg" alt="Illustrator">
+          </div>
+          <div class="pct">85%</div>
+        </div>
+        <div class="tool-name">Illustrator</div>
+      </div>
+
+      <!-- Photoshop -->
+      <div class="tool">
+        <div class="tool-card">
+          <div class="logo-wrap">
+            <img src="photoshop-original.svg" alt="Photoshop">
+          </div>
+          <div class="pct">70%</div>
+        </div>
+        <div class="tool-name">Photoshop</div>
+      </div>
+
+      <!-- Canva -->
+      <div class="tool">
+        <div class="tool-card">
+          <div class="logo-wrap">
+            <img src="canva-original.svg" alt="Canva">
+          </div>
+          <div class="pct">85%</div>
+        </div>
+        <div class="tool-name">Canva</div>
+      </div>
+
+      <!-- VS Code -->
+      <div class="tool">
+        <div class="tool-card">
+          <div class="logo-wrap">
+            <img src="vscode-original.svg" alt="VS Code">
+          </div>
+          <div class="pct">80%</div>
+        </div>
+        <div class="tool-name">VS Code</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>My Latest <span>Projects</span></h2>
+
+    <div class="projects-grid">
+
+      <!-- Card 1 -->
+      <article class="project-card">
+        <div class="thumb">
+          <img src="CodeNPlay.png" alt="CodeNPlay website preview">
+        </div>
+        <div class="card-body">
+          <div class="chip-group">
+            <span class="chip">UX/UI Design</span>
+            <span class="chip">Client Project</span>
+            <span class="chip">2025</span>
+          </div>
+          <h3>CodeNPlay</h3>
+          <a class="arrow-btn" href="codenplay.html">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17L17 7M17 7H9M17 7v8" />
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="project-card">
+        <div class="thumb">
+          <img src="cinema.png" alt="Cinema-app">
+        </div>
+        <div class="card-body">
+          <div class="chip-group">
+            <span class="chip">UX/UI Design</span>
+            <span class="chip">Mobile App</span>
+            <span class="chip">Concept Project</span>
+          </div>
+          <h3>Cinema Mobile App</h3>
+          <a class="arrow-btn" href="cinema.html" aria-label="Open project">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17L17 7M17 7H9M17 7v8" />
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 3 - OrgaTrack -->
+      <article class="project-card">
+        <div class="thumb">
+          <img src="orgatrackNv.png" alt="OrgaTrack dashboard preview">
+        </div>
+
+        <div class="card-body">
+          <div class="chip-group">
+            <span class="chip">UX/UI Design</span>
+            <span class="chip">Dashboard</span>
+            <span class="chip">Client Project</span>
+          </div>
+
+          <h3>OrgaTrack</h3>
+
+          <a class="arrow-btn" href="orgatrack.html" aria-label="Open project">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17L17 7M17 7H9M17 7v8" />
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 4 - BubbleTech HR Portal -->
+      <article class="project-card">
+        <div class="thumb">
+          <img src="mockupBubbletech.png" alt="BubbleTech HR Portal preview">
+        </div>
+
+        <div class="card-body">
+          <div class="chip-group">
+            <span class="chip">UX/UI Design</span>
+            <span class="chip">Dashboard</span>
+            <span class="chip">BubbleTech</span>
+          </div>
+
+          <h3>BubbleTech HR Portal</h3>
+
+          <a class="arrow-btn" href="bubbletech.html" aria-label="Open project">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17L17 7M17 7H9M17 7v8" />
+            </svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+  <!-- ===== FOOTER ===== -->
+  <div class="skills-banner">
+    <ul class="skills-track">
+      <li>Website Design</li>
+      <li>App Design</li>
+      <li>Landing Page</li>
+      <li>Mobile Prototype</li>
+    </ul>
+  </div>
+
+  <footer id="contact" class="footer">
+    <div class="footer-inner">
+      <h2 class="footer-title">Contact <span>Me</span></h2>
+
+      <div class="contact-row">
+        <span class="contact-icon">
+          <!-- envelope -->
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 6h16v12H4z" />
+            <path d="M22 7l-10 6L2 7" />
+          </svg>
+        </span>
+        <a class="contact-link" href="mailto:belginersezer03@gmail.com">belginersezer03@gmail.com</a>
+      </div>
+
+      <div class="contact-row">
+        <span class="contact-icon">
+          <!-- linkedin -->
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path
+              d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6 5.06 0 6 3.33 6 7.66V24h-5v-7.2c0-1.72-.03-3.94-2.4-3.94-2.4 0-2.77 1.87-2.77 3.8V24h-5V8z" />
+          </svg>
+        </span>
+        <a class="contact-link" href="https://www.linkedin.com/in/belgin-ersezer-39a809330/" target="_blank"
+          rel="noreferrer">
+          https://www.linkedin.com/in/belgin-ersezer-39a809330/
+        </a>
+      </div>
+    </div>
   </footer>
 </body>
+
 </html>
